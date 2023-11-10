@@ -1,0 +1,75 @@
+#include<stdio.h>
+#include <math.h>
+int main(){
+printf("Hello World");
+
+int so_tien ;
+long dan_so ;
+float dien_tich_tam_giac ;
+char c='A';
+float x,y;
+printf("Xuat du lieu ra man hinh");
+int x=9;
+printf("Gia tri cua x = %d \n",x);
+float y=3.14;
+printf("Gia tri cua y = %f \n",y);
+float x2=4.5;
+float x3=9.6;
+printf("\n x2=%f  x3=%f",x2,x3);
+char c='A';
+printf("\n %c",c);
+
+int kiemTraSoChinhPhuong(int x){
+	int kc = (int)sqrt(x);
+	if(pow(kc, 2)==x) 
+		return 1; 
+	else 
+		return 0;
+}
+int main(){
+	int n;
+	do{
+		printf("Nhap n = ");
+		scanf("%d", &n);
+	}while(n<1 code="" d="" for="" i="" if="" int="" kiemtrasochinhphuong="" kt="kiemTraSoNguyenTo(i);" n="" printf="">	
+
+int a,b;
+printf("nhap so a=");
+scanf("%d",&a);
+printf("nhap so b=");
+scanf("%d",&b);
+	
+printf("\n%d == %d la %d",a,b,a==b);
+printf("\n%d > %d la %d",a,b,a>b);
+printf("\n%d < %d la %d",a,b,a<b);
+printf("\n%d >= %d la %d",a,b,a>=b);
+printf("\n%d <= %d la %d",a,b,a<=b);
+printf("\n%d != %d la %d",a,b,a!=b);
+min=(a<b)?a:b;
+max=(a>b)?a:b;
+printf("\n max=%d",max);
+printf("\n min=%d",min);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
