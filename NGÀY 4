@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
+#define Rectangle 1
+#define Square 2
+#define IsoRightTriangle 3
+
+void draw_Rectangle_Square (int size1, int size2) {
+    for (int i = 0; i < size2; i++ ) {
+        for (int j = 0; j < size1; j++) {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+}
+
+void drawIsoRightTriangle (int size1) { 
+    for (int i = 0; i < size1; i++) {
+        for (int j = 0; j <= i; j++) {
+            printf ("*");
+        }
+        printf ("\n");
+    }
+}
+
+int main () {
+    bool ok = true; 
+    while ( ok ) {
+        int size1=0;
+        int size2=0;
+        printf ("\nChoose the shape you want");
+        printf ("\n1. Rectangle");
+        printf ("\n2. Square");
+        printf ("\n3. Isosceles Right Triangle");
+        int choice_input;
+        printf ("\nEnter your choice: "); scanf ("%d",&choice_input);
+        
+        switch (choice_input) {
+            case Rectangle:
+                printf ("\nEnter the length of the Rectangle: "); scanf ("%d",&size1);
+                printf ("\nEnter the width of the Rectangle: "); scanf ("%d",&size2);
+                draw_Rectangle_Square (size1, size2);
+                break;
+            case Square:
+                printf ("\nEnter the side of Square: "); scanf ("%d",&size1);
+                size2 = size1;
+                draw_Rectangle_Square (size1, size2);
+                break;
+            case IsoRightTriangle:
+                printf ("\nEnter the right side of Isosceles Right Triangle: "); scanf ("%d",&size1);
+                drawIsoRightTriangle (size1);
+                break;
+            default:
+                ok = false;
+                break;
+        }
+    }
